@@ -5,6 +5,7 @@ import glob
 import os
 
 import pandas as pd
+import mlflow
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
@@ -35,8 +36,8 @@ def get_csvs_df(path):
 # TO DO: add function to split data
 def split_data(df):
     # split data into X and y
-    X = df.drop('Y', axis=1).values
-    y = df['Y'].values
+    X = df.drop('Diabetic', axis=1).values
+    y = df['Diabetic'].values
     
     # split data into training and test sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=42)
