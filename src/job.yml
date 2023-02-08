@@ -12,4 +12,4 @@ inputs:
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml:ssd414
 experiment_name: "logistic-regression-training"
-description: "Training a logistic regression model using Azure ML and MLflow"MLflow"
+description: "Training a logistic regression model using Azure ML and MLflow"
